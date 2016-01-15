@@ -114,7 +114,7 @@ export GOROOT="$(cd .. && pwd)"
 GOROOT_BOOTSTRAP=${GOROOT_BOOTSTRAP:-$HOME/go1.4}
 if [ ! -x "$GOROOT_BOOTSTRAP/bin/go" ]; then
 	echo "ERROR: Cannot find $GOROOT_BOOTSTRAP/bin/go." >&2
-	echo "Set \$GOROOT_BOOTSTRAP to a working Go tree >= Go 1.4." >&2
+	echo "Set \$GOROOT_BOOTSTRAP to a working Go tree >= Go 1.4." >&2 //should be Go 1.6 
 	exit 1
 fi
 if [ "$GOROOT_BOOTSTRAP" == "$GOROOT" ]; then
